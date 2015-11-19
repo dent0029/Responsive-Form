@@ -1,0 +1,51 @@
+<html>
+   <meta charset="UTF-8"/>
+   <link rel="stylesheet" href="css/css.css"> 
+    <div class="wrapper">
+    	<header class="masthead">
+        	<h1>Online Forum</h1>
+        </header>
+        <section class="main">
+        	<h2>User Registration</h2>
+            <p>Please follow the instructions to fill out this form. If there are no instructions then please add some.</p>
+            <form action="register.php" method="post" enctype="application/x-www-form-urlencoded">
+            	<div class="formbox">
+                	<label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" autocomplete="off" required placeholder="Your e-mail address" class="wide" />
+                </div>
+                <div class="formbox">
+                	<label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass" autocomplete="off" required class="med" placeholder="Please enter a password"/>
+                </div>
+                <div class="formbox">
+                	<label for="pass2">Re-type Password</label>
+                    <input type="password" name="pass2" id="pass2" autocomplete="off" required class="med" required placeholder="Confirm Password"/>
+                </div>
+                <div class="formbox">
+                	<label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" autocomplete="off" required placeholder="Just your given name" class="med" />
+                </div>
+                <div class="formbox">
+                	<label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" autocomplete="off" required placeholder="Just your family name" class="med" />
+                </div>
+                <div class="formbox">
+                	<label for="usertype">Account Type</label>
+                    <select name="usertype" id="usertype" class="med">
+                    	<option value="1">Pirate</option>
+                        <option value="2">Ninja</option>
+                        <option value="3">Robot</option>
+                        <option value="4">Alien</option>
+                        <option value="5">Colonial Marine</option>
+                    </select>
+                </div>
+                <div class="formbox buttons">
+                	<input type="submit" name="btnSubmit" id="btnSubmit" value="Register" class="btn" />
+                </div>
+            </form>
+        </section>
+        <footer class="footer">
+        	<p>&copy; Chicken Stuff Inc.</p>
+        </footer>
+    </div>
+</html>
